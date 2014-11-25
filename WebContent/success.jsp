@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Login Page</title>
+<title>Success</title>
 
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -13,11 +13,7 @@
 </head>
 <body>
 
-<form action="login" method="post">
-  <br />User ID: <input type="text" name="userId" />
-  <br />Password: <input type="password" name="password" />
-  <br /><input type="submit" />
-</form>
+<h3>Login Successful! </h3>
 
 </body>
 </html>
