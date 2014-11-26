@@ -1,9 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<%@ page import="org.koushik.javabrains.dto.User" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Success</title>
 
 <!--[if lt IE 9]>
@@ -13,7 +14,11 @@
 </head>
 <body>
 
-<h3>Login Successful! </h3>
+<%
+User user = (User) request.getAttribute("user");
+%>
+
+<h3>Hello <%=user.getUserName() %>! </h3>
 
 </body>
 </html>
