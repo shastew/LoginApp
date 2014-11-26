@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-<%@ page import="org.koushik.javabrains.dto.User" %>
+    pageEncoding="utf-8" import="org.koushik.javabrains.dto.User" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,11 +13,13 @@
 </head>
 <body>
 
-<%
-User user = (User) request.getAttribute("user");
-%>
+<h3>Login Successful!</h3>
 
-<h3>Hello <%=user.getUserName() %>! </h3>
+<jsp:useBean id="user" class="org.koushik.javabrains.dto.User" scope="request">
+    <jsp:setProperty property="userName" name="user" value="NewUser" />
+</jsp:useBean>
+
+Hello <jsp:getProperty property="userName" name="user" />!
 
 </body>
 </html>
