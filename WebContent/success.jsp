@@ -19,7 +19,7 @@
     <jsp:setProperty property="userName" name="user" value="NewUser" />
 </jsp:useBean>
 
-Hello <jsp:getProperty property="userName" name="user" />!
+Hello <jsp:getProperty property="firstName" name="user" /> <jsp:getProperty property="lastName" name="user" />!
 
 </body>
 </html>
